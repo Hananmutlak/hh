@@ -1,0 +1,32 @@
+@keyframes germFloat {
+    0% { transform: translate(0, 0) rotate(0deg) scale(0.8); }
+    25% { transform: translate(10px, -15px) rotate(15deg) scale(1); }
+    50% { transform: translate(-10px, 10px) rotate(-10deg) scale(1.1); }
+    75% { transform: translate(5px, -5px) rotate(5deg) scale(0.9); }
+    100% { transform: translate(0, 0) rotate(0deg) scale(0.8); }
+}
+
+@keyframes gentlePulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

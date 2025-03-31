@@ -1,0 +1,42 @@
+{
+  "name": "sjukdom10",
+  "version": "1.0.0",
+ 
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "docs": "jsdoc src/js -d docs",
+    "clean-docs": "rd /s /q docs || Remove-Item -Recurse -Force docs",
+    "generate-docs": "npm run clean-docs && npm run docs"
+  },
+  "keywords": [
+    "disease",
+    "tracker",
+    "health"
+  ],
+  "author": "hanan",
+  "license": "ISC",
+  "description": "A global disease tracking application.",
+  "browserslist": [
+    ">0.2%",
+    "not op_mini all",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "@parcel/transformer-sass": "^2.13.3",
+    "jsdoc": "^4.0.4",
+    "parcel": "^2.14.1",
+    "sass": "^1.72.0"
+  },
+  "dependencies": {
+    "chart.js": "^4.0.0",
+    "leaflet": "^1.9.4"
+  },
+  "directories": {
+    "doc": "docs"
+  }
+}
